@@ -2,9 +2,14 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            System.Console.WriteLine("Cron Job started...");
+            while (true)
+            {
+                System.Console.WriteLine($"Cron job running at {DateTime.UtcNow}");
+                await Task.Delay(TimeSpan.FromMinutes(1)); // Run every 1 minute
+            }
         }
     }
 }

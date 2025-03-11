@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aether-kubernetes-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aether-kubernetes-api
+  template:
+    metadata:
+      labels:
+        app: aether-kubernetes-api
+    spec:
+      containers:
+        - name: aether-kubernetes-api
+          image: aether.kubernetes:1.0.0
+          ports:
+            - containerPort: 80
+          command: ["dotnet", "Aether.Kubernetes.Api.dll"]
+        - name: aether-kubernetes-cron
+          image: aether.kubernetes:1.0.0
+          command: ["dotnet", "Aether.Kubernetes.Console.dll"]

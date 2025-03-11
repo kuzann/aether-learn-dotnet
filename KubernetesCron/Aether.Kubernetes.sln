@@ -7,7 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Kubernetes.Api", "Ae
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aether.Kubernetes.Cron", "Aether.Kubernetes.Cron\Aether.Kubernetes.Cron.csproj", "{C8446FAC-A887-4F2E-8B3F-E0C9707E3249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Kubernetes.Console", "Aether.Kubernetes.Console\Aether.Kubernetes.Console.csproj", "{F1A9909E-DE80-429D-AFAA-7B003E2C3EE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aether.Kubernetes.Console", "Aether.Kubernetes.Console\Aether.Kubernetes.Console.csproj", "{6CEAF42E-7CF6-8AEC-9CD8-C5644AF53B5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		cron.yaml = cron.yaml
+		Dockerfile = Dockerfile
+		service.yaml = service.yaml
+		web-api.yaml = web-api.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +31,10 @@ Global
 		{C8446FAC-A887-4F2E-8B3F-E0C9707E3249}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8446FAC-A887-4F2E-8B3F-E0C9707E3249}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8446FAC-A887-4F2E-8B3F-E0C9707E3249}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1A9909E-DE80-429D-AFAA-7B003E2C3EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1A9909E-DE80-429D-AFAA-7B003E2C3EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1A9909E-DE80-429D-AFAA-7B003E2C3EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1A9909E-DE80-429D-AFAA-7B003E2C3EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEAF42E-7CF6-8AEC-9CD8-C5644AF53B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEAF42E-7CF6-8AEC-9CD8-C5644AF53B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEAF42E-7CF6-8AEC-9CD8-C5644AF53B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEAF42E-7CF6-8AEC-9CD8-C5644AF53B5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: aether-kubernetes-cron
+spec:
+  schedule: "*/2 * * * *" # Runs every 5 minutes
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: cronjob
+              image: aether-kubernetes:1.0.0
+              command: ["dotnet", "Aether.Kubernetes.Console.dll"]
+          restartPolicy: OnFailure

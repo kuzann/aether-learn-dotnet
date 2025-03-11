@@ -23,6 +23,8 @@ namespace Aether.Kubernetes.Api
                 app.UseSwaggerUI();
             }
 
+            app.MapGet("/", () => "Hello from Web API!");
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
