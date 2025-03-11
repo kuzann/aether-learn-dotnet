@@ -9,7 +9,7 @@ spec:
       template:
         spec:
           containers:
-            - name: cronjob
-              image: aether-kubernetes:1.0.0
+            - name: aether-kubernetes-cron
+              image: aether.kubernetes:1.0.0
               command: ["dotnet", "Aether.Kubernetes.Console.dll"]
           restartPolicy: OnFailure
