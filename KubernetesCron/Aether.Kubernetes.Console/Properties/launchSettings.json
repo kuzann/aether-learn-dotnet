@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Aether.Kubernetes.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "\"baba\" \"bobo\""
+    }
+  }
+}

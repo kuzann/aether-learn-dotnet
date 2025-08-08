@@ -1,3 +1,5 @@
+using System;
+
 namespace Aether.Kubernetes.Api
 {
     public class WeatherForecast

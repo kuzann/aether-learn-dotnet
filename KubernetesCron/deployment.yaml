@@ -18,6 +18,6 @@ spec:
           ports:
             - containerPort: 80
           command: ["dotnet", "Aether.Kubernetes.Api.dll"]
-        - name: aether-kubernetes-cron
-          image: aether.kubernetes:1.0.0
-          command: ["dotnet", "Aether.Kubernetes.Console.dll"]
+        # - name: aether-kubernetes-cron
+        #   image: aether.kubernetes:1.0.0
+        #   command: ["dotnet", "Aether.Kubernetes.Console.dll"]

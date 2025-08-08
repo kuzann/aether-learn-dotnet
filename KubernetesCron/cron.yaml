@@ -11,5 +11,5 @@ spec:
           containers:
             - name: aether-kubernetes-cron
               image: aether.kubernetes:1.0.0
-              command: ["dotnet", "Aether.Kubernetes.Console.dll"]
+              command: ["dotnet", "Aether.Kubernetes.Console.dll","blablabla","ccccccddddd"]
           restartPolicy: OnFailure

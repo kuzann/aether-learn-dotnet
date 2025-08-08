@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-api-service
+  name: aether-kubernetes-api-service
 spec:
   selector:
     app: aether-kubernetes-api
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: ClusterIP
+      port: 80 # The port exposed by the Service (internal to the cluster)
+      targetPort: 80 # The port on the Pods to which traffic will be forwarded
+      nodePort: 30000 # Optional: A specific port on the node (must be in 30000-32767 range)
+                    # If omitted, Kubernetes assigns a random port within the range.
+  type: NodePort
